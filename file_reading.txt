@@ -1,0 +1,7 @@
+import csv
+
+with open ('data.CSV') as f:
+  myreader= csv.DictReader(f)
+  headers=next(myreader)
+  for r in myreader :
+     print(headers)
